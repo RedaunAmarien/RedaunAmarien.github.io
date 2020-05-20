@@ -30,3 +30,7 @@ li {
 li a {
 	underline: none;
 }
+
+article {
+	margin-top: 10px;
+}
