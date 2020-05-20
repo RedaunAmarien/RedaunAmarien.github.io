@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {
+	display: block;
+}
+
+html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, main, nav, section {
+	padding: 0;
+	margin: 0;
+}
+
+.banner {
+	background-color: #6304e3;
+	color: white;
+	padding: 10px 20px;
+}
+
+body {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Calibri, sans-serif;
+	font-size: 15px;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	underline: none;
+}
