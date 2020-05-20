@@ -13,12 +13,15 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, main, nav,
 	background-color: #6304e3;
 	color: white;
 	padding: 10px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #f3f3f3;
 	font-family: Calibri, sans-serif;
 	font-size: 15px;
 }
@@ -33,4 +36,16 @@ li a {
 
 article {
 	margin-top: 10px;
+}
+
+footer {
+	margin-top: 10px;
+	color: white;
+	text-align: center;
+}
+
+footer article {
+	background-color: #6304e3;
+	margin: 0;
+	padding: 0;
 }
