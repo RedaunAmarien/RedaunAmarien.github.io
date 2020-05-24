@@ -10,18 +10,23 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, main, nav,
 }
 
 .banner {
-	background-color: #6304e3;
+	background-color: #4c0e8a;
 	color: white;
 	padding: 10px 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
+h1 {
+	text-align: center;
+}
+
 body {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #f3f3f3;
+	background-color: #222222;
+	color: #eeeeee;
 	font-family: Calibri, sans-serif;
 	font-size: 15px;
 }
@@ -30,8 +35,12 @@ li {
 	display: inline;
 }
 
-li a {
-	underline: none;
+a {
+	color: #a65fed;
+}
+
+ nav {
+	text-align: center;
 }
 
 article {
@@ -42,10 +51,22 @@ footer {
 	margin-top: 10px;
 	color: white;
 	text-align: center;
+	/* float: center; */
 }
 
 footer article {
-	background-color: #6304e3;
+	background-color: #4c0e8a;
 	margin: 0;
 	padding: 0;
+	/* float: center; */
+}
+
+.playable {
+	margin-left: 10%;
+	margin-right: 10%;
+	/* float: left; */
+}
+
+.idea {
+	/* float: right; */
 }
