@@ -8,6 +8,9 @@
 	<body>
 		<header class="banner">
 			<h1>Redaun Amarién Welcomes You</h1>
+			<?php
+			echo "Testing php.";
+			?>
 		</header>
 		
 		<nav>
