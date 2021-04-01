@@ -9,6 +9,10 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, main, nav,
 	margin: 0;
 }
 
+.button-area {
+	
+}
+
 .banner {
 	background-color: #7641b7;
 	color: white;
@@ -25,7 +29,7 @@ h1 {
 }
 
 body {
-	width: 90%;
+	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #4c1284;
@@ -70,8 +74,8 @@ footer article {
 }
 
 .playable {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 	/* float: left; */
 }
 
