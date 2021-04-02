@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-article, aside, footer, header, main, nav, section {
+aside, footer, header, nav, section {
 	display: block;
 }
 
-html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, main, nav, section {
+html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, nav, section {
 	padding: 0;
 	margin: 0;
 }
@@ -16,20 +16,55 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, main, nav,
 .banner {
 	background-color: #7641b7;
 	color: white;
-	/*margin-top: 10px;*/
 	margin-bottom: 10px;
 }
 
 .content {
-	background-color: #222222;
+	background-color: #171717;
 }
 
-h1 {
-	text-align: center;
+.intro {
+	display: block;
+	margin: 10px;
+}
+
+.main {
+	/*display: table;*/
+	/*background-color: #222222;*/
+	/*margin: 10px;*/
+}
+
+.playable {
+	display: table-row;
+	margin: 10px;
+}
+
+.game-panel {
+	display: block;
+	margin: 10px;
+}
+
+.game-sub-panel {
+	padding: 10px;
+}
+
+.idea {
+	/* float: right; */
+}
+
+.footer-bar {
+	background-color: #7641b7;
+	display: block;
+	padding: 5px;
+}
+
+.table-cell {
+	display: table-cell;
+	width: 50%;
 }
 
 body {
-	width: 75%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #4c1284;
@@ -38,12 +73,11 @@ body {
 	font-size: 15px;
 }
 
-.main {
-	background-color: #222222;
-	padding: 10px 20px;
+h1 {
+	text-align: center;
 }
 
-li {
+nav li {
 	display: inline;
 }
 
@@ -56,29 +90,18 @@ nav {
 }
 
 article {
-	margin-top: 10px;
+	display: inline-block;
+	background-color: #404040;
+}
+
+article h1{
+	background-color: #333333;
+	padding: 5px;
+	text-align: left;
 }
 
 footer {
 	margin-top: 10px;
 	color: white;
 	text-align: center;
-	/* float: center; */
-}
-
-footer article {
-	background-color: #7641b7;
-	margin: 0;
-	padding: 0;
-	/* float: center; */
-}
-
-.playable {
-	margin-left: 5%;
-	margin-right: 5%;
-	/* float: left; */
-}
-
-.idea {
-	/* float: right; */
 }
