@@ -14,9 +14,8 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, nav, secti
 }
 
 .banner {
-	background-color: #7641b7;
-	color: white;
-	margin-bottom: 10px;
+	/*background-color: #7641b7;*/
+	/*color: white;*/
 }
 
 .content {
@@ -64,7 +63,8 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, nav, secti
 }
 
 body {
-	width: 85%;
+	min-width: 500px;
+	max-width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #4c1284;
