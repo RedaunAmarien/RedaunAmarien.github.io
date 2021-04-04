@@ -4,62 +4,13 @@ aside, footer, header, nav, section {
 	display: block;
 }
 
-html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, nav, section {
+html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, nav, section, img {
 	padding: 0;
 	margin: 0;
 }
 
-.button-area {
-	
-}
-
-.banner {
-	/*background-color: #7641b7;*/
-	/*color: white;*/
-}
-
-.content {
-	background-color: #171717;
-}
-
-.intro {
-	display: block;
-	margin: 10px;
-}
-
-.main {
-	/*display: table;*/
-	/*background-color: #222222;*/
-	/*margin: 10px;*/
-}
-
-.playable {
-	display: table-row;
-	margin: 10px;
-}
-
-.game-panel {
-	display: block;
-	margin: 10px;
-}
-
-.game-sub-panel {
-	padding: 10px;
-}
-
-.idea {
-	/* float: right; */
-}
-
-.footer-bar {
-	background-color: #7641b7;
-	display: block;
-	padding: 5px;
-}
-
-.table-cell {
-	display: table-cell;
-	width: 50%;
+a {
+	color: #a571ed;
 }
 
 body {
@@ -73,20 +24,31 @@ body {
 	font-size: 15px;
 }
 
-h1 {
-	text-align: center;
+.button-area {
+	
+}
+
+.banner {
+	/*background-color: #7641b7;*/
+	/*color: white;*/
 }
 
 nav li {
 	display: inline;
 }
 
-a {
-	color: #a571ed;
-}
-
 nav {
 	text-align: center;
+}
+
+.content {
+	background-color: #171717;
+}
+
+.main {
+	/*display: table;*/
+	/*background-color: #222222;*/
+	/*margin: 10px;*/
 }
 
 article {
@@ -94,14 +56,48 @@ article {
 	background-color: #404040;
 }
 
-article h1{
+article h1 {
 	background-color: #333333;
 	padding: 5px;
 	text-align: left;
+}
+
+.intro {
+	display: block;
+	margin: 10px;
+}
+
+.table {
+	display: table;
+}
+
+.row {
+	display: table-row;
+	margin: 10px;
+}
+
+.panel {
+	display: block;
+	margin: 10px;
+}
+
+.sub-panel {
+	padding: 10px;
+}
+
+.cell {
+	display: table-cell;
+	width: 50%;
 }
 
 footer {
 	margin-top: 10px;
 	color: white;
 	text-align: center;
+}
+
+.footer-bar {
+	background-color: #7641b7;
+	display: block;
+	padding: 5px;
 }
