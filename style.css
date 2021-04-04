@@ -9,6 +9,10 @@ html, body, h1, h2, h3, ul, li, a, p, article, aside, header, footer, nav, secti
 	margin: 0;
 }
 
+button {
+	padding: 5px;
+}
+
 a {
 	color: #a571ed;
 }
