@@ -2,8 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Thunder City Minecraft Server</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+			
+		</script>
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body>
@@ -29,9 +33,29 @@
 					<div class="sub-panel">
 						<!-- <p>This page is under construction. Please check back for updates.</p> -->
 						<p>For information and instructions for joining, please go to the <a href="http://sites.google.com/view/thundercitymc">Thunder City Homepage</a>.</p>
-						<div class="g-recaptcha" data-sitekey="6LdVh5waAAAAAGSsb1OMMiBEyEbPW9TbXMPWYYmW"></div>
 					</div>
 				</article>
+				
+				<section>
+					<form action="minecraft.html">
+						<fieldset>
+							<legend>Required Information:</legend>
+							<label for="username">Minecraft Username:</label>
+							<input required type="text" id="username" name="username"/><br />
+							<label for="birthday">Birthdate (mm/dd/yyyy):</label>
+							<input required type="date" id="birthday" name="birthday"/><br />
+							<label for="version">Game Version:</label>
+							<select name="version" id="version" required>
+								<option value="java">Java</option>
+								<option value="bedrock">Bedrock</option>
+							</select><br />
+							
+							<div class="g-recaptcha" data-sitekey="6LdVh5waAAAAAGSsb1OMMiBEyEbPW9TbXMPWYYmW"></div>
+							
+							<input type="submit" value="Submit"/>
+						</fieldset>
+					</form>
+				</section>
 			</div>
 			
 			<footer>
