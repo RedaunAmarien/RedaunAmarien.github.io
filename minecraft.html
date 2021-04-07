@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Thunder City Minecraft Server</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -14,26 +15,41 @@
 			</header>
 			
 			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="games.html">Games</a></li>
-					<li><a href="art.html">Art</a></li>
-					<li><a href="music.html">Music</a></li>
-					<!-- <li><a href="conlangs.html"></a></li> -->
-					<li><a href="minecraft.html">Thunder City</a></li>
-				</ul>
+				<div class="topnav" id="myTopnav">
+				  <a href="index.html">Home</a>
+				  <a href="games.html">Games</a>
+				  <a href="art.html">Art</a>
+				  <a href="music.html">Music</a>
+				  <a href="minecraft.html" class="active">Thunder City</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"> </i>
+				  </a>
+				</div>
+				
+				<script>
+				function myFunction() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+				    x.className += " responsive";
+				  } else {
+				    x.className = "topnav";
+				  }
+				}
+				</script>
 			</nav>
 			
 			<div class="main">
-				<article class = "intro">
+				<article class = "intro" id="intro">
 					<h1>Hybrid Creative &amp; Survival Server</h1>
 					<div class="sub-panel">
-						<p>A Minecraft server made for gay furry dudes!<br />Develop the city in creative mode, or go exploring in survival!<br />Most importantly, just go wild and have fun.</p>
+						<p>A Minecraft server made for gay furry dudes!<br />
+							Develop the city in creative mode, or go exploring in survival!<br />
+							Most importantly, just go wild and have fun.</p>
 					</div>
 				</article>
 				
 				<section>
-					<article class="panel">
+					<article class="panel" id="gallery">
 						<h1>Gallery</h1>
 						<div class="sub-panel">
 							<!-- Slideshow container -->
@@ -124,21 +140,21 @@
 							
 							<!-- The dots/circles -->
 							<div style="text-align:center">
-								<span class="dot" onclick="currentSlide(1)">1</span>
-								<span class="dot" onclick="currentSlide(2)">2</span>
-								<span class="dot" onclick="currentSlide(3)">3</span>
-								<span class="dot" onclick="currentSlide(4)">4</span>
-								<span class="dot" onclick="currentSlide(5)">5</span>
-								<span class="dot" onclick="currentSlide(6)">6</span>
-								<span class="dot" onclick="currentSlide(7)">7</span>
-								<span class="dot" onclick="currentSlide(8)">8</span>
-								<span class="dot" onclick="currentSlide(9)">9</span>
-								<span class="dot" onclick="currentSlide(10)">10</span>
-								<span class="dot" onclick="currentSlide(11)">11</span>
-								<span class="dot" onclick="currentSlide(12)">12</span>
-								<span class="dot" onclick="currentSlide(13)">13</span>
-								<span class="dot" onclick="currentSlide(14)">14</span>
-								<span class="dot" onclick="currentSlide(15)">15</span>
+								<span class="dot" onclick="currentSlide(1)"> </span>
+								<span class="dot" onclick="currentSlide(2)"> </span>
+								<span class="dot" onclick="currentSlide(3)"> </span>
+								<span class="dot" onclick="currentSlide(4)"> </span>
+								<span class="dot" onclick="currentSlide(5)"> </span>
+								<span class="dot" onclick="currentSlide(6)"> </span>
+								<span class="dot" onclick="currentSlide(7)"> </span>
+								<span class="dot" onclick="currentSlide(8)"> </span>
+								<span class="dot" onclick="currentSlide(9)"> </span>
+								<span class="dot" onclick="currentSlide(10)"> </span>
+								<span class="dot" onclick="currentSlide(11)"> </span>
+								<span class="dot" onclick="currentSlide(12)"> </span>
+								<span class="dot" onclick="currentSlide(13)"> </span>
+								<span class="dot" onclick="currentSlide(14)"> </span>
+								<span class="dot" onclick="currentSlide(15)"> </span>
 							</div>
 							<script>
 								var slideIndex = 1;
@@ -146,33 +162,37 @@
 								
 								// Next/previous controls
 								function plusSlides(n) {
-								  showSlides(slideIndex += n);
+									showSlides(slideIndex += n);
 								}
 								
 								// Thumbnail image controls
 								function currentSlide(n) {
-								  showSlides(slideIndex = n);
+									showSlides(slideIndex = n);
 								}
 								
 								function showSlides(n) {
-								  var i;
-								  var slides = document.getElementsByClassName("mySlides");
-								  var dots = document.getElementsByClassName("dot");
-								  if (n > slides.length) {slideIndex = 1}
-								  if (n < 1) {slideIndex = slides.length}
-								  for (i = 0; i < slides.length; i++) {
-								      slides[i].style.display = "none";
-								  }
-								  for (i = 0; i < dots.length; i++) {
-								      dots[i].className = dots[i].className.replace(" active", "");
-								  }
-								  slides[slideIndex-1].style.display = "block";
-								  dots[slideIndex-1].className += " active";
+									var i;
+									var slides = document.getElementsByClassName("mySlides");
+									var dots = document.getElementsByClassName("dot");
+									if (n > slides.length) {
+										slideIndex = 1;
+									}
+									if (n < 1) {
+										slideIndex = slides.length;
+									}
+									for (i = 0; i < slides.length; i++) {
+										slides[i].style.display = "none";
+									}
+									for (i = 0; i < dots.length; i++) {
+										dots[i].className = dots[i].className.replace(" active", "");
+									}
+									slides[slideIndex-1].style.display = "block";
+									dots[slideIndex-1].className += " active";
 								} 
 							</script>
 						</div>
 					</article>
-					<article class="panel">
+					<article class="panel" id="rules">
 						<h1>Rules</h1>
 						<div class="sub-panel">
 							<p>The rules are simple:</p>
@@ -189,21 +209,36 @@
 							</ul>
 						</div>
 					</article>
-					<article class="panel">
-						<h1>How the City Works</h1>
-						<div class="sub-panel">
-							<h2>Inside the City</h2>
-							<p>Your gamemode will be set to <strong>Creative</strong> immediately upon entering the city boundaries; BUT, you <strong>will not</strong> be able to build until you claim a land plot. Ask Redaun to set up your plot once you've found a spot you like.</p>
-							<p>Each player is allowed to claim plots of land adding up to <strong>1 city-block</strong> (CB) to start. The first build cannot be larger than <strong>1/4 <abbr title="city-block">CB</abbr></strong>, but once that build is done, it can be expanded to Extra-Large sizes. When all the plots adding up to 1 CB are finished, the player will be allowed to claim more land. There is plot-size example board in Spawn Square to help you visualize the plot sizes available.</p>
-							<p>Once claimed, you can build anything you like! Everyone has access to WorldEdit within their own land as well, to make things easier. If you are unfamiliar with WorldEdit, there is a short tutorial center in the northwest corner of Spawn Square. Additionally, you can check out the <a href="http://worldedit.enginehub.org/en/latest/quickstart/">WorldEdit Quick Start</a> and the <a href="http://worldedit.enginehub.org/en/latest/commands/">WorldEdit Commands</a> pages for information and useful commands!</p>
-							
-							<h2>Outside the City</h2>
-							<p>Your gamemode will be set to <strong>Survival</strong> immediately upon exiting the city boundaries. Be careful! You can <strong>fall to your death</strong> if flying out of the city!</p>
-							<p>There is a <strong>teleport hub</strong> at spawn which will take you in each cardinal direction out of the city, or to Dimension2 (an extra survival world). <strong>Additional mini-teleport stations</strong> can be requested once you have a survival base set up, for easy coming and going to the city. Unless, you know, you enjoy living in seclusion hundreds of miles away. Then go for it.</p>
-							<p>Survival zones have basic survival rules! Go wild outside! But again, don't grief other players' properties or crash the server.</p>
+					<div class="row" id="info">
+						<div class="cell" style="width: 75%s">
+							<article class="panel">
+								<h1>How the City Works</h1>
+								<div class="sub-panel">
+									<h2>Inside the City</h2>
+									<p>Your gamemode will be set to <strong>Creative</strong> immediately upon entering the city boundaries; BUT, you <strong>will not</strong> be able to build until you claim a land plot. Ask Redaun to set up your plot once you've found a spot you like.</p>
+									<p>Each player is allowed to claim plots of land adding up to <strong>1 city-block</strong> (CB) to start. The first build cannot be larger than <strong>1/4 <abbr title="city-block">CB</abbr></strong>, but once that build is done, it can be expanded to Extra-Large sizes. When all the plots adding up to 1 CB are finished, the player will be allowed to claim more land. There is plot-size example board in Spawn Square to help you visualize the plot sizes available.</p>
+									<p>Once claimed, you can build anything you like! Everyone has access to WorldEdit within their own land as well, to make things easier. If you are unfamiliar with WorldEdit, there is a short tutorial center in the northwest corner of Spawn Square. Additionally, you can check out the <a href="http://worldedit.enginehub.org/en/latest/quickstart/">WorldEdit Quick Start</a> and the <a href="http://worldedit.enginehub.org/en/latest/commands/">WorldEdit Commands</a> pages for information and useful commands!</p>
+		
+									<h2>Outside the City</h2>
+									<p>Your gamemode will be set to <strong>Survival</strong> immediately upon exiting the city boundaries. Be careful! You can <strong>fall to your death</strong> if flying out of the city!</p>
+									<p>There is a <strong>teleport hub</strong> at spawn which will take you in each cardinal direction out of the city, or to Dimension2 (an extra survival world). <strong>Additional mini-teleport stations</strong> can be requested once you have a survival base set up, for easy coming and going to the city. Unless, you know, you enjoy living in seclusion hundreds of miles away. Then go for it.</p>
+									<p>Survival zones have basic survival rules! Go wild outside! But again, don't grief other players' properties or crash the server.</p>
+								</div>
+							</article>
 						</div>
-					</article>
-					<article class="panel">
+						<div class="cell" style="width: 25%">
+							<article class="panel">
+								<h1>Plot Size Chart</h1>
+								<div class="sub-panel">
+									<p>Available plot sizes and their approximate area:</p>
+									<img src="img/BlockSplitDiagram.png" width="100%" alt="">
+									<p>* 1/2 CB and 1/3 CB size plots are not available for first-time players.</p>
+									<p>! All plots <strong>MUST</strong> have road access. They cannot be landlocked by other plots.</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<article class="panel" id="login">
 						<h1>How to Log In</h1>
 						<div class="sub-panel">
 							<p>Since this server is hosted on <a href="http://www.minehut.com">Minehut</a>, logging in is a bit odd.</p>
@@ -225,6 +260,7 @@
 								<li>Repeat this process until it finally lets you in (sometimes the server wake-up takes a couple minutes).</li>
 							</ol>
 							<h2>Using Bedrock Edition (Win10, Console, Mobile)</h2>
+							<p>Minehut's Bedrock support is still under development and often has connection issues. Please be patient with them.</p>
 							<ol>
 								<li>Open Minecraft.</li>
 								<li>Navigate to Play > Servers > Add Server.</li>
@@ -244,7 +280,7 @@
 							</ol>
 						</div>
 					</article>
-					<article class="panel">
+					<article class="panel" id="challenges">
 						<h1>Build Challenges</h1>
 						<div class="sub-panel">
 							<p>There are currently 5 challenges that builders can aim to complete, if they are in need of building inspiration.</p>
@@ -258,7 +294,7 @@
 							<p>More challenges may show up in the future. Players who complete all five challenges get a special Builder's Role (actual benefits of this role currently undecided).</p>
 						</div>
 					</article>
-					<!-- <article class="panel">
+					<!-- <article class="panel" id="join">
 						<h1>Join Us!</h1>
 						<div class="sub-panel">
 							<p>Apply here to whitelist your name and join the server!</p>
@@ -291,7 +327,6 @@
 						&copy; 2021 Redaun Amarién
 					</p>
 				</div>
-				<p><img src="favicon.ico" width="100"></p>
 			</footer>
 		</div>
 	</body>

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Games | Redaun Amarién</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -13,24 +14,35 @@
 			</header>
 			
 			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="games.html">Games</a></li>
-					<li><a href="art.html">Art</a></li>
-					<li><a href="music.html">Music</a></li>
-					<!-- <li><a href="conlangs.html"></a></li> -->
-					<li><a href="minecraft.html">Thunder City</a></li>
-				</ul>
+				<div class="topnav" id="myTopnav">
+				  <a href="index.html">Home</a>
+				  <a href="games.html" class="active">Games</a>
+				  <a href="art.html">Art</a>
+				  <a href="music.html">Music</a>
+				  <a href="minecraft.html">Thunder City</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"> </i>
+				  </a>
+				</div>
+				
+				<script>
+				function myFunction() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+				    x.className += " responsive";
+				  } else {
+				    x.className = "topnav";
+				  }
+				}
+				</script>
 			</nav>
 			
 			<div class="main">
 				<article class = "intro">
 					<h1>The Fun Zone</h1>
 					<div class="sub-panel">
-						<p>Video games!<br />
-						Currently three games have playable prototypes, and more ideas are in the early stages.<br />
-						I'll update them here!<br />
-						I host all my games on itch.io. My profile there is at <a href="http://redaun.itch.io/">redaun.itch.io</a>!</p>
+						<p>Currently three of my game design projects have playable prototypes, and more ideas are in their early stages. They're all listed here!</p>
+						<p>I host all of my games on itch.io. Check out <a href="http://redaun.itch.io/">redaun.itch.io</a> for my profile on that site!</p>
 					</div>
 				</article>
 				
@@ -44,7 +56,7 @@
 										<a href="https://redaun.itch.io/snowriders">Snowriders by Redaun Amarién</a>
 									</iframe>
 									<p>Expected Rating Range:</p>
-									<img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" alt="Rated E"/><img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" alt="Rated E10+"/>
+									<p><img src="https://www.esrb.org/wp-content/uploads/2019/05/E.svg" alt="Rated E"/><img src="https://www.esrb.org/wp-content/uploads/2019/05/E10plus.svg" alt="Rated E10+"/></p>
 									<p>Progress to next stage [Beta]: <font color=cyan>15%</font></p>
 									<p>A spiritual successor to the Snowboard Kids series by Atlus. Race opponents on the slopes!</p>
 								</div>
@@ -58,7 +70,7 @@
 										<a href="https://redaun.itch.io/lex-game">Lex's Game by Redaun Amarién</a>
 									</iframe>
 									<p>Expected Rating Range:</p>
-									<img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" alt="Rated M"/><img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" alt="Adults Only"/>
+									<p><img src="https://www.esrb.org/wp-content/uploads/2019/05/M.svg" alt="Rated M"/><img src="https://www.esrb.org/wp-content/uploads/2019/05/AO.svg" alt="Adults Only"/></p>
 									<p>Progress to next stage [Beta]: <font color=cyan>10%</font></p>
 									<p>Play as an adult filmmaker fighting for the freedom of nudity.</p>
 								</div>
@@ -75,7 +87,7 @@
 									</a> -->
 									<p>[Not yet uploaded]</p>
 									<p>Expected Rating Range:</p>
-									<img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" alt="Rated T"/>
+									<p><img src="https://www.esrb.org/wp-content/uploads/2019/05/T.svg" alt="Rated T"/></p>
 									<p>Progress to next stage [Alpha]: <font color=cyan>25%</font></p>
 									<p>A tie-in game to my (unreleased) book, Ariston Superbiae. This short game lets you smack around villains from the story in a very <a href=https://megami.starcreator.com/nanaca-crash>Nanaca Crash</a> &amp; <a href=https://ks.renai.us/viewtopic.php?t=3071>Katawa Crash</a> way.</p>
 								</div>
@@ -103,7 +115,6 @@
 						&copy; 2021 Redaun Amarién
 					</p>
 				</div>
-				<p><img src="favicon.ico" width="100"/></p>
 			</footer>
 			
 		</div>

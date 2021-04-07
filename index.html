@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Redaun Amarién</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
@@ -13,14 +14,27 @@
 			</header>
 			
 			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="games.html">Games</a></li>
-					<li><a href="art.html">Art</a></li>
-					<li><a href="music.html">Music</a></li>
-					<!-- <li><a href="conlangs.html">[Conlangs]</a></li> -->
-					<li><a href="minecraft.html">Thunder City</a></li>
-				</ul>
+				<div class="topnav" id="myTopnav">
+				  <a href="index.html" class="active">Home</a>
+				  <a href="games.html">Games</a>
+				  <a href="art.html">Art</a>
+				  <a href="music.html">Music</a>
+				  <a href="minecraft.html">Thunder City</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"> </i>
+				  </a>
+				</div>
+				
+				<script>
+				function myFunction() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+				    x.className += " responsive";
+				  } else {
+				    x.className = "topnav";
+				  }
+				}
+				</script>
 			</nav>
 			
 			<div class="main">
@@ -44,7 +58,6 @@
 						&copy; 2021 Redaun Amarién
 					</p>
 				</div>
-				<p><img src="favicon.ico" width="100"/></p>
 			</footer>
 		</div>
 	</body>
