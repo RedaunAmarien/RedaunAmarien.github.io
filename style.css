@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
+* {
+	box-sizing:border-box
+}
+
 html {
 	scroll-behavior: smooth;
 	height: 100%;
 }
 
 aside, footer, header, nav, section {
-	display: block;
+	/*display: block;*/
 }
 
 html, body, h1, h2, h3, ul, ol, li, a, article, aside, header, footer, nav, section, img {
@@ -17,6 +21,11 @@ html, body, h1, h2, h3, ul, ol, li, a, article, aside, header, footer, nav, sect
 p {
 	padding: 5px 0;
 	margin: 0;
+}
+
+strong {
+	font-style: italic;
+	font-weight: bold;
 }
 
 button {
@@ -35,8 +44,8 @@ body {
 	background-color: #4c1284;
 	height: 100%;
 	color: #eeeeee;
-	font-family: Calibri, sans-serif;
-	font-size: 15px;
+	font-family: Calibri, "Source Sans Pro", sans-serif;
+	font-size: 100%;
 }
 
 .button-area {
@@ -69,11 +78,13 @@ nav {
 	/*display: table;*/
 	/*background-color: #222222;*/
 	/*margin: 10px;*/
+	padding: 5px;
+	padding-bottom: 35px;
 }
 
 article {
-	display: inline-block;
 	background-color: #404040;
+	margin: 5px;
 }
 
 article h1 {
@@ -91,8 +102,8 @@ article ol, article ul {
 }
 
 .intro {
-	display: block;
-	margin: 10px;
+	/*display: block;*/
+	/*margin: 5px;*/
 }
 
 .table {
@@ -101,12 +112,11 @@ article ol, article ul {
 
 .row {
 	display: table-row;
-	margin: 10px;
+	/*margin: 10px;*/
 }
 
 .panel {
-	display: block;
-	margin: 10px;
+	margin: 10px 5px;
 }
 
 .sub-panel {
@@ -119,17 +129,13 @@ article ol, article ul {
 }
 
 footer {
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	bottom: 0;
 	background-color: #7641B7;
-	margin-top: 10px;
-	padding: 5px;
+	width: 85%;
 	text-align: center;
 	z-index: 99;
 }
-
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
